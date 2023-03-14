@@ -9,6 +9,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #wrapper {
 
 } 
@@ -20,6 +24,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #header .search-button {
@@ -92,13 +97,81 @@ html {
 
 #slider {
     margin-top: 46px;
-    background-color: green;
-    height: 500px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+}
+
+#slider .text-heading {
+    text-align: center;
+    margin: 25px 0px;
+    font-weight: 500;
+}
+
+#slider .text-description {
+    text-align: center;
+    font-weight: bolder;
 }
 
 #content {
-    height: 2000px;
-    background-color: #ccc;
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin: 0px auto;
+    padding: 64px 16px;
+}
+
+#content .content-section .section-heading {
+    text-align: center;
+    margin: 10px 0px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+#content .content-section .sub-heading {
+    margin: 15px 0px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+#content .content-section .about-text {
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 1.5;
+}
+
+#content .member-list {
+    padding: 32px 0px;
+    overflow: hidden;
+}
+#content .content-section .member-item {
+    float:left;
+    width: 33,33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+#content .member-img {
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
 }
 
 #footer {
